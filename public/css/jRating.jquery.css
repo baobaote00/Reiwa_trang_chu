@@ -1,0 +1,165 @@
+/*********************/
+/** jRating CSS **/
+/*********************/
+
+/**Div containing the color of the stars */
+.jRatingAverage {
+	background-color:#f62929;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:2;
+	height:100%;
+}
+.jRatingColor {
+	background-color:#ff0; /* bgcolor of the stars*/
+	position:relative;
+	top:0;
+	left:0;
+	z-index:2;
+	height:100%;
+}
+
+/** Div containing the stars **/
+.jStar {
+	position:relative;
+	left:0;
+	z-index:3;
+}
+
+/** P containing the rate informations **/
+p.jRatingInfos {
+	position:		absolute;
+	z-index:9999;
+	background:	transparent url('icons/bg_jRatingInfos.png') no-repeat;
+	color:			red;
+	display:		none;
+	width:			91px;
+	height:			29px;	
+	font-size:16px;
+	text-align:center;
+	padding-top:5px;
+}
+	p.jRatingInfos span.maxRate {
+		color:#c9c9c9;
+		font-size:14px;
+	}
+
+
+    .datasSent, .serverResponse {
+margin-top: 20px;
+width: 470px;
+height: 73px;
+border: 1px solid #F0F0F0;
+background-color: #F8F8F8;
+padding: 10px;
+float: left;
+margin-right: 10px
+}
+.datasSent {
+width: 200px;
+position: fixed;
+left: 680px;
+top: 0
+}
+.serverResponse {
+position: fixed;
+left: 680px;
+top: 100px
+}
+.datasSent p, .serverResponse p {
+font-style: italic;
+font-size: 12px
+}
+.exemple {
+margin-top: 15px;
+}
+.clr {
+clear: both
+}
+pre {
+margin: 0;
+padding: 0
+}
+.notice {
+background-color: #F4F4F4;
+color: #666;
+border: 1px solid #CECECE;
+padding: 10px;
+font-weight: bold;
+width: 600px;
+font-size: 12px;
+margin-top: 10px
+}
+
+
+
+.rating {
+    float:left;
+}
+.rating:not(:checked) > input {
+    position:absolute;
+    left:-9999px;
+    clip:rect(0,0,0,0);
+}
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    margin:0px auto;
+    font-size:140%;
+    line-height:1.2;
+    color:#ddd;
+    /* text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5); */
+}
+
+.hidenstar{
+    z-index: -1;
+    position: relative;
+}
+
+.activestar{}
+.rating:not(:checked) > label:before {
+    content: 'â˜… ';
+}
+.tongdanhgia{
+    color: #c4c4c4;
+    font-size: 11px;
+    display: inline-block;
+    line-height: 21px;
+    margin-left: 6px;
+    }
+.diemsaotb{    color: #c4c4c4;display: inline-block;margin-right: 10px;
+    font-size: 11px;}
+.rating > input:checked ~ label {
+    color: #ffd800;
+    /* text-shadow: 1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5); */
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+.rating:not(:checked) > label::before {
+    content: "★ ";
+}

@@ -1,0 +1,76 @@
+
+/* Deskop */
+@media (max-width: 575.98px) { 
+    .border-bottom{
+        display: none;
+    }
+    .repo-mg{
+        margin-top:25px;
+    }
+    .img-repo{
+        height: 300px;
+    }
+    .container-custom{
+        margin-left: 5%;
+        margin-right: 5%;
+        display:grid;
+    }
+    .repo-img{
+        padding-left: 0px;
+        padding-left: 0px;
+    }
+    .nav-padding{
+        padding-right: 10px;
+    }
+}
+@media (max-width: 985px) { 
+    h1{
+        font-size: 25pt;
+    }
+    .form-inline{
+        display: none;
+    }
+    .top-info{
+        margin-left: 25%;
+    }
+    .product-mobile{
+        position: static;
+    }
+    .info-pos{
+        font-size: medium;
+    }
+    .img-repo{
+        height: 500px;
+    }
+    .nav-padding{
+        padding-right: 10px;
+    }
+    
+}
+@media (max-width: 765px){
+    .repo-product{
+        margin-top: 25px;
+    }
+    .repo-product-1{
+        max-height: 300px; 
+        width: auto;
+        margin-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .repo-img{
+        padding-left: 0px;
+        padding-left: 0px;
+    }
+    .container-custom{
+        margin-left: 5%;
+        margin-right: 5%;
+        display:grid;
+    }
+    .nav-padding{
+        padding-right: 10px;
+    }
+
+}
+
+
