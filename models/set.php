@@ -13,7 +13,10 @@ function  setContent2()
 
 function  setContent3()
 {
-
+    $themeModel = new ThemeModel();
+    $theme3 = $themeModel->getTheme('content_3');
+    $img = explode(',',$theme3['img']);
+    return $img;
 }
 
 function  setContent4()
@@ -28,7 +31,9 @@ function  setContent4()
 
 function  setContent5()
 {
-
+    $themeModel = new ThemeModel();
+    $theme3 = $themeModel->getTheme('content_5');
+    return $theme3['content'];
 }
 
 function  setContent6()

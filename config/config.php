@@ -1,3 +1,3 @@
 <?php
-define("BASE_URL", "reiwa");
-define("DEFAULT_IMG", "./public/images/ReiwaHouse_logo_final.svg");
+define("BASE_URL", "http://reiwa.local");
+define("DEFAULT_IMG", "http://reiwa.local/public/images/ReiwaHouse_logo_final.svg");

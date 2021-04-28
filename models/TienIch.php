@@ -1,6 +1,10 @@
 <?php
+spl_autoload_register(function ($class_name) {
+    require  $class_name . '.php';
+});
 class TienIch
 {
+
     //bỏ dấu và chuyển khoảng trắng thành _ trong tiếng việt
     public static function vn_to_str($str)
     {
@@ -135,9 +139,9 @@ class TienIch
     //Gửi mail
     public static function sendEmail($nguoi_nhan, $from_name, $subject, $noi_dung)
     {
-        require("./Models/PHPMailer-master/src/PHPMailer.php");
-        require("./Models/PHPMailer-master/src/SMTP.php");
-        require("./Models/PHPMailer-master/src/Exception.php");
+        require "./PHPMailer-master/src/PHPMailer.php";
+        require "./PHPMailer-master/src/SMTP.php";
+        require "./PHPMailer-master/src/Exception.php";
         $mail = new PHPMailer\PHPMailer\PHPMailer();
 
         $mail->CharSet = "UTF-8";

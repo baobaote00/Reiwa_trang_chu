@@ -17,13 +17,6 @@ for ($i = 2; $i < count(scandir("config")); $i++) {
 
 if ($_GET['action'] == 'sendmail') {
     if (!empty($_POST['email']) && !empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['content'])) {
-        $nguoiNhan = $_POST['email'];
-        $subject = $_POST['name'];
-        $fromName = $_POST['phone'];
-        $noiDung = $_POST['content'];
-        $customerModel = new CustomerModel();
-        $customerModel->insertKhachHang($_POST);
-        TienIch::sendEmail($nguoiNhan, $fromName, $subject, $noiDung);
     }
     $_GET['action'] = 'index';
 }

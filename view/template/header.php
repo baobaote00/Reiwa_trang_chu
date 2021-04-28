@@ -125,7 +125,7 @@ $contact = $contactModel->getContact();
     <!-- Nav -->
     <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top pos-nav">
         <div class="container">
-            <a class="navbar-brand" href="<?php echo URL_TRANG_CHU ?>"><img src="./public/images/ReiwaHouse_logo_final.svg" alt="logo" width="150" height="100" class="img-fluid"></a>
+            <a class="navbar-brand" href="<?php echo URL_TRANG_CHU ?>"><img src="<?php echo DEFAULT_IMG ?>" alt="logo" width="150" height="100" class="img-fluid"></a>
             <button class="navbar-toggler" id="click-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
