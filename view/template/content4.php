@@ -59,32 +59,5 @@ $product = $data[0];
     <div class="btn-more-product2"><a href="<?php echo URL_DAU_AN_CONG_TRINH . '&id=' /*. $value['id']*/ ?>" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;padding-top: 5px; background: #1a75bc
             ; color: white;">Xem tất cả</a>
     </div>
-    <script>
-        const btn_xem_them = document.getElementById("dropdownMenuButton");
-        var view_more = document.getElementById("xemthem");
-        let view = document.getElementById("product-category");
-        btn_xem_them.addEventListener('click', function() {
-            if (!view_more.classList.contains("show")) {
-                view_more.classList.add('show');
-            } else {
-                view_more.classList.remove('show');
-            }
-
-        });
-
-        function GET_PRODUCE(id) {
-            console.log(id);
-            $.ajax({
-                url: 'controller/GetPost.php',
-                type: 'GET',
-                data: {
-                    "take": id
-                },
-                success: function(response) {
-                    view.innerHTML = response;
-                }
-            });
-        }
-    </script>
 
 </div>

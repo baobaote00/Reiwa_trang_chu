@@ -29,8 +29,7 @@ class ProductModel extends Db
     }
 
     //lấy danh sách mẫu thiết kế theo danh mục
-    public function get_MauThietKe_By_CategoryID_TheoTrang($id, $page, $perPage)
-    {
+    public function get_MauThietKe_By_CategoryID_TheoTrang($id, $page, $perPage){
         $start = ($page - 1) * $perPage;
         $sql = parent::$conection->prepare('SELECT * FROM `categories_products` JOIN product ON product.id = product_id WHERE product.id_classify = 6 AND categories_id = ? LIMIT ?,?');
         $sql->bind_param('iii', $id, $start, $perPage);

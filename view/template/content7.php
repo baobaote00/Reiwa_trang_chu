@@ -2,13 +2,13 @@
 $content7 = setContent7();
 
 ?>
-    <div class=" mg-doitac">
-        <div class="bg-dt">
+<div class=" mg-doitac">
+    <div class="bg-dt">
+        <div class="container">
+            <h1 class=" text-style-2" style="font-size: 35pt; margin-top: 50px; padding-bottom: 20px;"><i class="fas fa-quote-left" style="margin-top: 30px;"></i></h1>
             <div class="container">
-                <h1 class=" text-style-2" style="font-size: 35pt; margin-top: 50px; padding-bottom: 20px;"><i class="fas fa-quote-left" style="margin-top: 30px;"></i></h1>
-                <div class="container">
-                    <span class="text-style-2" style="font-size: 15pt;">Chúng tôi bắt đầu với việc xác định vị trí, lựa chọn khái niệm, ý tưởng hoặc công năng thích hợp để từ đó tiến đến việc tuyển chọn đối tác phù hợp nhất cùng thực hiện dự án.</span>
-                    <div class="mg-doitac-1" style="padding-bottom: 50px;">
+                <span class="text-style-2" style="font-size: 15pt;">Chúng tôi bắt đầu với việc xác định vị trí, lựa chọn khái niệm, ý tưởng hoặc công năng thích hợp để từ đó tiến đến việc tuyển chọn đối tác phù hợp nhất cùng thực hiện dự án.</span>
+                <div class="mg-doitac-1" style="padding-bottom: 50px;">
                     <?php
                     foreach ($content7 as $value) {
                     ?>
@@ -16,30 +16,11 @@ $content7 = setContent7();
                     <?php
                     }
                     ?>
-                    </div>
                 </div>
-                
-                
             </div>
-        </div>
 
+
+        </div>
     </div>
 
-    <script>
-        const id_staff = document.querySelectorAll('#staff-id');
-        id_staff.forEach(element => {
-            element.addEventListener('click', function() {
-                id_staff.forEach(id => {
-                    if (element != id) {
-
-                        id.style.width = "50px";
-                        id.style.height = "50px";
-                    } else {
-
-                        id.style.width = "100px";
-                        id.style.height = "100px";
-                    }
-                });
-            });
-        });
-    </script>
+</div>

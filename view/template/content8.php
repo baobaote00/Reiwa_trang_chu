@@ -15,7 +15,5 @@ $content8 = setContent8();
             ?>
         </section>
     </div>
-    <script src="./public/js/scripts.js">
-
 
 </script>

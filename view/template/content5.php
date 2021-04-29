@@ -44,26 +44,3 @@ $content5 = setContent5();
         </div>
     </div>
 </div>
-<script>
-    function getMailCustomer() {
-        let email = document.getElementById('email').value;
-        let name = document.getElementById('name').value;
-        let phone = document.getElementById('phone').value;
-        let content = document.getElementById('content').value;
-        const dataGet = {
-            "email": email,
-            "name": name,
-            "phone": phone,
-            "content": content,
-        };
-
-        $.ajax({
-            url: '../../models/SendMailCustomer.php',
-            dataType: 'text', // what to expect back from the PHP script, if anything
-            data: dataGet,
-            type: 'post',
-            success: function(element) {
-            }
-        });
-    }
-</script>
